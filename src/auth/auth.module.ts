@@ -19,7 +19,7 @@ import { PrismaService } from 'src/prisma/prisma.service';
     JwtModule.register({
       secret: process.env.SECRETKEY, //pegando a senha pra criar token
       signOptions: {
-        expiresIn: '300s', //tempo de validade do token
+        expiresIn: '1200s', //tempo de validade do token
       },
     }),
   ],

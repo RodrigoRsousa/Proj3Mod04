@@ -1,9 +1,9 @@
-import { Injectable, PayloadTooLargeException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
 
 export interface JwtPayload {
-  email: string; //inserimos as informacoes que serao utilizadas para validacao do user e criacao do token
+  email: string;
 }
 
 @Injectable()
@@ -15,7 +15,6 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     });
   }
   validate(payload: JwtPayload) {
-    //pode-se adicionar validacoes nessa parte
     return payload;
   }
 }

@@ -1,6 +1,9 @@
 {
-  "name": "projeto02",
+  "name": "Proj03M04",
   "version": "0.0.1",
+  "engines": {
+    "node": "17.x"
+  },
   "description": "",
   "author": "",
   "private": true,
@@ -30,7 +33,12 @@
     "@nestjs/swagger": "^5.1.5",
     "@prisma/client": "^3.7.0",
     "@types/bcrypt": "^5.0.0",
+    "@types/validator": "^13.7.0",
     "bcrypt": "^5.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "node": "^17.3.0",
+    "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
