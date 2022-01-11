@@ -1,30 +1,26 @@
 import { Injectable } from '@nestjs/common';
 import { CreateTweetDto } from './dto/create-tweet.dto';
 import { UpdateTweetDto } from './dto/update-tweet.dto';
-import { PrismaService } from 'src/prisma/prisma.service';
-import { Tweet, Prisma } from '@prisma/client';
 
 @Injectable()
 export class TweetService {
-  constructor(private prisma: PrismaService) {}
-
-  async create(data: Prisma.TweetUncheckedCreateInput): Promise<Tweet> {
-    return await this.prisma.tweet.create({ data });
+  create(createTweetDto: CreateTweetDto) {
+    return 'This action adds a new tweet';
   }
 
-  async findAll(): Promise<Tweet[]> {
-    return await this.prisma.tweet.findMany();
+  findAll() {
+    return `This action returns all tweet`;
   }
 
-  async findOne(id: number): Promise<Tweet> {
-    return await this.prisma.tweet.findUnique({where: {id}});
+  findOne(id: number) {
+    return `This action returns a #${id} tweet`;
   }
 
-  async update(id: number, data: UpdateTweetDto): Promise<Tweet> {
-    return await this.prisma.tweet.update({data, where: {id}});
+  update(id: number, updateTweetDto: UpdateTweetDto) {
+    return `This action updates a #${id} tweet`;
   }
 
-  async remove(id: number): Promise<Tweet> {
-    return await this.prisma.tweet.delete({where: {id}});
+  remove(id: number) {
+    return `This action removes a #${id} tweet`;
   }
 }

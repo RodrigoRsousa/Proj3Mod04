@@ -1,4 +1,4 @@
-# Proj02M04Api para controle de rede social tipo Tweeter.
+Api para controle de rede social tipo Tweeter.
 
 Ferramentas utilizadas: PRISMA, NEST, @nest/client, SWAGGER, THUNDERCLIENT e BCRYPT. (obs.: se esqueci de algum, favor marcar aqui nesse parenteses para eu me lembrar....) Swagger rodando em http://localhost:3000/api
 
