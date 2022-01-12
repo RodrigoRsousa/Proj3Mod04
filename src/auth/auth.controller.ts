@@ -13,8 +13,8 @@ export class AuthController {
     } //autenticar o login
 
     @Get()
-    @UseGuards(AuthGuard()) 
+    @UseGuards(AuthGuard()) //endpoint para autenticacao
     async checkLogin(){
         return 'Usuário logado';
-    } 
+    } //confirmacao de autenticacao
 }
