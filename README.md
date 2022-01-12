@@ -14,4 +14,4 @@ A rota GET /tweet e /tweet/id estão com acesso livre para consulta. As rotas PO
 
 As rotas GET /seguidores, /seguidores/id e GET /seguindo, /seguindo/id estão liberadas para consultas. As rotas POST /seguidores e /seguindo, PATCH /seguidores/id e /seguindo/id e DELETE /seguidores/id e /seguindo/id estão autenticadas com "@UseGuards(AuthGuard('jwt'))", onde somente serão acessadas com usuários válidados pelo token de acesso gerado pelo JWT.
 
-Projeto feito deploy no Heroku, acesso pelo link: https://projeto3m4.herokuapp.com/
+Projeto feito deploy no Heroku, acesso pelo link:https://proj03mod04.herokuapp.com/
